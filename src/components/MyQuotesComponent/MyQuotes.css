@@ -1,0 +1,111 @@
+.my_quotes {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  display: grid;
+  gap: 20px;
+}
+
+h2 {
+  color: #333;
+  text-align: center;
+}
+
+#semcadastros {
+  color: #888;
+  text-align: center;
+}
+
+#ul_quotes {
+  list-style: none;
+  padding: 0;
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(600px, 1fr));
+}
+
+#li_quotes {
+  margin-bottom: 20px;
+}
+
+blockquote {
+  border-left: 4px solid #4caf50;
+  padding-left: 15px;
+  margin: 0;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+#apagardados {
+  background-color: #f44336;
+  color: white;
+  right: auto;
+  margin-top: 10px;
+}
+
+p {
+  margin: 0;
+}
+
+footer {
+  color: #777;
+  margin-top: 10px;
+}
+
+@media only screen and (max-width: 900px) {
+  .my_quotes {
+    padding: 15px;
+    margin: 50px;
+    max-width: 750px;
+  }
+
+  #ul_quotes {
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  }
+
+  #apagardados {
+    background-color: #f44336;
+    color: white;
+    margin-top: 10px;
+    max-width: 100px;
+    padding: 10px 5px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .my_quotes {
+    padding: 10px;
+    margin: 20px;
+    max-width: 550px;
+  }
+
+  #ul_quotes {
+    grid-template-columns: 1fr;
+  }
+
+  #apagardados {
+    background-color: #f44336;
+    color: white;
+    margin-top: 10px;
+    max-width: 100px;
+    padding: 5px 5px;
+  }
+
+  blockquote {
+    padding: 15px;
+  }
+
+  blockquote p {
+    font-size: 16px;
+  }
+
+  blockquote footer {
+    font-size: 14px;
+  }
+}

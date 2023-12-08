@@ -1,0 +1,77 @@
+.famous_quotes {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+h2 {
+  color: #333;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+#ul_famous {
+  list-style-type: none;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(600px, 1fr));
+  gap: 20px;
+}
+
+blockquote {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+blockquote p {
+  font-size: 18px;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+blockquote footer {
+  font-size: 16px;
+  color: #666;
+}
+
+@media only screen and (max-width: 900px) {
+  .famous_quotes {
+    padding: 15px;
+    margin: 50px;
+    max-width: 750px;
+  }
+
+  #ul_famous {
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .famous_quotes {
+    padding: 10px;
+    margin: 20px;
+    max-width: 550px;
+  }
+
+  #ul_famous {
+    grid-template-columns: 1fr;
+  }
+
+  blockquote {
+    padding: 15px;
+  }
+
+  blockquote p {
+    font-size: 16px;
+  }
+
+  blockquote footer {
+    font-size: 14px;
+  }
+}
